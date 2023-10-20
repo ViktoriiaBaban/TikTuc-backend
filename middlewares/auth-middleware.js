@@ -1,5 +1,5 @@
 const ApiError = require('../errors/api-error');
-const tokenService = require('../service/token-service');
+const tokenService = require('../service/token/token-service');
 
 module.exports = function (req, res, next) {
     try {

@@ -1,10 +1,10 @@
-const ApplicationModel = require('../models/application-model')
+const ApplicationModel = require('../../models/application/application-model')
 const {models} = require("mongoose");
-const mailService = require("./mail-service");
-const userService = require('./user-service')
+const mailService = require("../mail-service");
+const userService = require('../user/user-service')
 const generatePassword = require('password-generator');
-const UserModel = require("../models/user-model");
-const ApiError = require("../errors/api-error");
+const UserModel = require("../../models/user/user-model");
+const ApiError = require("../../errors/api-error");
 
 class ApplicationService {
     async create(email, last_name, first_name, patronymic='', fio_boss, division, position, work_experience, achievements, motivation_letter, status='accepted') {

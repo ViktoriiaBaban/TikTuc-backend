@@ -1,10 +1,10 @@
-const UserModel= require('../models/user-model')
-const mailService = require('./mail-service')
-const tokenService = require('./token-service')
+const UserModel= require('../../models/user/user-model')
+const mailService = require('../mail-service')
+const tokenService = require('../token/token-service')
 const uuid = require('uuid')
 const bcrypt = require('bcrypt')
-const ApiError = require('../errors/api-error')
-const generateTokens = require('../utils/generate-tokens')
+const ApiError = require('../../errors/api-error')
+const generateTokens = require('../../utils/generate-tokens')
 
 class UserService  {
     async registration(email,password) {

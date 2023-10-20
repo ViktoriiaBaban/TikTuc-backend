@@ -1,5 +1,5 @@
 const UserDto = require("../dtos/user");
-const tokenService = require("../service/token-service");
+const tokenService = require("../service/token/token-service");
 
 module.exports = async function generateTokens(user) {
     const userDto = new UserDto(user)

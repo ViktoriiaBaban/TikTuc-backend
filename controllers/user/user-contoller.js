@@ -1,6 +1,6 @@
-const userService = require('../service/user-service')
+const userService = require('../../service/user/user-service')
 const { validationResult } = require('express-validator');
-const ApiError = require('../errors/api-error')
+const ApiError = require('../../errors/api-error')
 
 class UserController {
 
